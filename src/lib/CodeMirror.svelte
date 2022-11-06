@@ -16,7 +16,7 @@
   let element
 
   onMount(() => {
-		createEditor()
+		createEditor(options)
 	})
 	
   $: if(element) { createEditor(options) }
@@ -38,6 +38,10 @@
 <div bind:this={element} class={classes}/>
 
 <style unscoped>
+:global(.CodeMirror-wrap pre) {
+    word-break: break-word;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --cm-border-color: #ccc;

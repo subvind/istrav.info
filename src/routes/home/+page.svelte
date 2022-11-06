@@ -50,44 +50,30 @@
 </script>
 	
 <svelte:head>
-	<title>Ideal Talent: Ask/manage a team of AI powered IT bots - isTrav</title>
+	<title>Information - isTrav</title>
 	<meta name="description" content="isTrav's natural language processor and artificial intelligence is trained to know how to use our software and is especially talented when it comes to networks." />
 </svelte:head>
 
-<div class="wrapper">
-	<div class="pattern"></div>
-	<div class="container" style="margin-top: -300px;">
-		<h1 class="title" style="color: #fff;">
-			Ideal Talent
-		</h1>
-		<div class="card">
-			<div class="card-content">
-				<div class="card" style="border: 1em solid #000;">
-					<Editor bind:value={message} bind:onChange={onChangeTimeline} />
-				</div>
-				<br />
-				<div class="card" style="background: #ee6e73;">
-					<div class="card-content">
-						<a href="https://github.com/trabur" class="btn btn-small black right" target="_blank">settings</a>
-						<div class="card-title">Ask/manage a team of AI powered IT bots:</div>
-						<div class="card-description">(run "> help" for assistance)</div>
-						<br />
-						<Editor bind:value={log} bind:onChange={onChangeLog} />
-					</div>
-					<div class="card-action log-action">
-						<a href="https://github.com/trabur" class="btn btn-large grey" target="_blank">history</a>
-						<a href="https://github.com/trabur" class="btn btn-large grey" target="_blank">templates</a>
-						<button on:click={() => submit()} class="btn btn-large right" target="_blank">submit</button>
-					</div>
-				</div>
-			</div>
-		</div>
+<div class="card" style="background: #ee6e73; color: #000;">
+	<div class="card-content">
+		<a href="https://github.com/trabur" class="btn btn-small grey right black-text" target="_blank">audience</a>
+		<div class="card-title">What's happening?</div>
+		<div class="card-description">(everyone can reply)</div>
+		<br />
+		<Editor bind:value={log} bind:onChange={onChangeLog} />
 	</div>
-	<br />
-	<br />
-	<br />
-	<br />
+	<div class="card-action log-action">
+		<a href="https://github.com/trabur" class="btn btn-small btn-floating white" target="_blank"><i class="material-icons black-text">movie</i></a>
+		<a href="https://github.com/trabur" class="btn btn-small btn-floating white" target="_blank"><i class="material-icons black-text">gif</i></a>
+		<a href="https://github.com/trabur" class="btn btn-small btn-floating white" target="_blank"><i class="material-icons black-text">poll</i></a>
+		<a href="https://github.com/trabur" class="btn btn-small btn-floating white" target="_blank"><i class="material-icons black-text">insert_emoticon</i></a>
+		<button on:click={() => submit()} class="btn btn right white black-text" target="_blank">submit</button>
+	</div>
 </div>
+<div class="card">
+	<Editor bind:value={message} bind:onChange={onChangeTimeline} />
+</div>
+<br />
 
 <style>
 	.pattern {
@@ -108,7 +94,7 @@
 	}
 
 	.log-action {
-		border-top: 1em solid #000;
-		background: #222;
+		border-top: 1px solid #000;
+		background: #ee6e73;
 	}
 </style>

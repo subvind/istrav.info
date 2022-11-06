@@ -5,7 +5,8 @@
 	const options = {
 		mode: "markdown",
 		lineNumbers: true,
-		value
+		value,
+    lineWrapping: true
 	}
 	let editor: any
 	let cursor_activity = false

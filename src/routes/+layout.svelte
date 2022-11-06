@@ -1,12 +1,19 @@
 <script lang="ts">
-	import Header from '$lib/Header.svelte';
-	import Footer from '$lib/Footer.svelte';
+	import Navigation from '$lib/Navigation.svelte';
 	import '../app.css';
-
 </script>
 
-<Header />
 
-<slot />
+<Navigation active="home" isOpen={true}/>
+<div class="detail">
+	<div class="container" style="width: 100%;height: 100%;">
+		<slot />
+	</div>
+</div>
 
-<Footer />
+<style>
+	.detail {
+		height: 100%;
+	}
+</style>
+
