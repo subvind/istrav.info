@@ -3,7 +3,7 @@
 </script>
 
 <div class="row" style="height: 100%;">
-  <div class="col s12 m12 l7" style="height: 100%;">
+  <div class="col s12 m12 l7" style="height: 100%; padding: 0;">
     <slot></slot>
   </div>
   <div class="col s0 m0 l5" style="height: 100%; padding: 0;">
