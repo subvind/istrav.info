@@ -63,6 +63,7 @@
 		<Editor bind:value={log} bind:onChange={onChangeLog} />
 	</div>
 	<div class="card-action log-action">
+		<a href="https://github.com/trabur" class="btn btn-small btn-floating white" target="_blank"><i class="material-icons black-text">playlist_add</i></a>
 		<a href="https://github.com/trabur" class="btn btn-small btn-floating white" target="_blank"><i class="material-icons black-text">movie</i></a>
 		<a href="https://github.com/trabur" class="btn btn-small btn-floating white" target="_blank"><i class="material-icons black-text">gif</i></a>
 		<a href="https://github.com/trabur" class="btn btn-small btn-floating white" target="_blank"><i class="material-icons black-text">poll</i></a>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Search from '$lib/Search.svelte';
 	import Footer from '$lib/Footer.svelte';
 </script>
 
@@ -8,6 +9,7 @@
   </div>
   <div class="col s0 m0 l5" style="height: 100%; padding: 0;">
     <div class="sidebar">
+      <Search />
       <Footer />
     </div>
   </div>
@@ -20,5 +22,6 @@
 		overflow-y: auto;
 		overflow-x: hidden;
     height: 100%;
+    padding-left: 1em;
 	}
 </style>
